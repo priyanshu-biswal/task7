@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+nav{
+    background-color: #00aaff;
+    padding: 15px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+}
+ul li a:hover{
+    color: gray;
+}
+.user{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(140, 170, 219);
+    color: white;
+    font-family: 'Tahoma', sans-serif;
+    cursor: pointer;
+}
+.hero{
+    min-height: 90vh;
+    padding: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-left{
+    width: 50%;
+}
+
+.hero-left h1{
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.hero-left span{
+    color: #00aaff;
+}
+
+.hero-left p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-left button{
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.hero-left button:hover{
+    background-color: #ccc;
+    color: blue;
+}
+
+.hero-right{
+    width: 50%;
+    text-align: center;
+}
+
+.hero-right img{
+    width: 100%;
+    max-width: 550px;
+}
+@media (max-width:1024px){
+
+    nav{
+        padding: 15px 25px;
+    }
+
+    .logo{
+        font-size: 10px;
+    }
+
+    ul{
+        gap: 20px;
+    }
+
+    ul li a{
+        font-size: 16px;
+    }
+
+    .user{
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+    .hero{
+        padding: 40px;
+        gap: 20px;
+    }
+
+    .hero-left h1{
+        font-size: 42px;
+    }
+
+    .hero-left p{
+        font-size: 16px;
+    }
+
+    .hero-right img{
+        max-width: 420px;
+    }
+}
+
+@media (max-width:768px){
+
+    nav{
+        padding: 15px 20px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .logo{
+        font-size: 5px;
+    }
+
+    .user{
+        font-size: 7px;
+        padding: 6px 10px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    
+    .hero-left,.hero-right{
+        width: 100%;
+    }
+
+    .hero-left h1{
+        font-size: 32px;
+    }
+
+    .hero-left p{
+        font-size: 15px;
+    }
+
+    .hero-left button{
+        width: 100%;
+    }
+
+    .hero-right img{
+        max-width: 100%;
+    }
+}
